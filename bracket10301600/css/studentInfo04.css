@@ -1,0 +1,25 @@
+      body>div {
+            min-width: 1000px;
+            max-width: 1500px;
+            padding: 20px;
+        }
+        body>div>div:first-of-type{
+              font-weight: bold;
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+
+        table,
+        tr,
+        td {
+            border: 1px solid gray;
+            border-collapse: collapse;
+        }
+
+        table {
+            width: 100%;
+            text-align: center;
+        }
+        .hamberger{
+            width: 15px;
+        }

@@ -3,55 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/update.css">
 
-    <style>
-        div {
-            min-width: 700px;
-            max-width: 1000px;
-        }
 
-        div>span+div {
-            border: 1px solid gray;
-            margin: 10px;
-            padding: 10px;
-        }
-
-        #search {
-            float: right;
-            margin-right: 10px;
-        }
-
-        div>div:nth-of-type(2) {
-            /*form 정보*/
-            border: 1px solid gray;
-            margin: 10px;
-            padding: 20px;
-        }
-
-        div>div:nth-of-type(2)>form {
-            padding: 30px;
-        }
-
-        div>div:nth-of-type(2)>form>table>tr {}
-
-        td {
-            height: 40px;
-        }
-
-        form+div {
-            text-align: center;    
-            
-        }
-        #update{
-            width: 100px;
-            height: 25px;
-            color: white;
-            background-color: rgb(190,31,49);
-            border: 0;
-            border-radius: 5px;
-        }
-    </style>
-    
     <script src="jquery-3.2.1.min.js"></script>
     <script>
         $(function() {
@@ -71,9 +26,9 @@
         <span>학생메뉴>학적정보>개인정보수정</span>
         <div>
             <form action="#">
-                비밀번호 확인 <input type="password"> 
+                비밀번호 확인 <input type="password">
                 <input type="image" src="image/SearchButton.jpg" id="search">
-           
+
             </form>
         </div>
         <div>
