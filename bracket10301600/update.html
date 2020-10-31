@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <style>
+        div {
+            min-width: 700px;
+            max-width: 1000px;
+        }
+
+        div>span+div {
+            border: 1px solid gray;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        #search {
+            float: right;
+            margin-right: 10px;
+        }
+
+        div>div:nth-of-type(2) {
+            /*form 정보*/
+            border: 1px solid gray;
+            margin: 10px;
+            padding: 20px;
+        }
+
+        div>div:nth-of-type(2)>form {
+            padding: 30px;
+        }
+
+        div>div:nth-of-type(2)>form>table>tr {}
+
+        td {
+            height: 40px;
+        }
+
+        form+div {
+            text-align: center;    
+            
+        }
+        #update{
+            width: 100px;
+            height: 25px;
+            color: white;
+            background-color: rgb(190,31,49);
+            border: 0;
+            border-radius: 5px;
+        }
+    </style>
+    
+    <script src="jquery-3.2.1.min.js"></script>
+    <script>
+        $(function() {
+            $('.dis').attr('disabled', 'disabled');
+
+            $('#search').click(function() {
+                $('.dis').removeAttr('disabled');
+            });
+
+        });
+    </script>
+</head>
+
+<body>
+
+    <div>
+        <span>학생메뉴>학적정보>개인정보수정</span>
+        <div>
+            <form action="#">
+                비밀번호 확인 <input type="password"> 
+                <input type="image" src="image/SearchButton.jpg" id="search">
+           
+            </form>
+        </div>
+        <div>
+
+            본인정보
+
+            <form action="#">
+                <table>
+                    <tr>
+                        <td>이름</td>
+                        <td>
+                            <input type="text" class="dis">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>전화번호</td>
+                        <td>
+                            <input type="text" class="dis">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>핸드폰</td>
+                        <td>
+                            <input type="text" class="dis"> <input type="checkbox" class="dis"> 공지수신자 동의
+                        </td>
+                        <td>
+                            동의일자 <input type="date" class="dis">
+                        </td>
+
+
+                    </tr>
+                    <tr>
+                        <td>주소</td>
+                        <td>
+                            <input type="text" class="dis" placeholder="기본주소"><br> <input type="text" class="dis" placeholder="상세주소">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>이메일</td>
+                        <td>
+                            <input type="text" class="dis">@<input type="text" class="dis">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+            <div>
+                <input type="submit" value="수정" id="update">
+            </div>
+
+        </div>
+    </div>
+</body></html>
