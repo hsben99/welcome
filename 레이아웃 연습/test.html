@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        body>div {
+            width: 1650px;
+            margin: 0 auto;
+            min-width: 1650px;
+            min-height: 1500px;
+
+        }
+
+        body>div>div:first-of-type {
+            border: 1px solid red;
+            float: left;
+            width: 300px;
+            height: 1500px;
+
+        }
+
+        body>div>div:nth-of-type(2) {
+            border: 1px solid blue;
+            float: left;
+        height: 1500px;
+            width: 1000px;
+        }
+
+        body>div>div:nth-of-type(3) {
+            border: 1px solid green;
+            float: left;
+            width: 300px;
+          height: 1500px;
+        }
+
+        header {
+            height: 200px;
+            border: 1px solid orange;
+        }
+
+        header>div {
+            text-align: center;
+            line-height: 200px;
+        }
+
+        nav {
+            height: 300px;
+            border: 1px solid black;
+        }
+
+        nav>ul {
+            display: flex;
+        }
+
+        nav>ul>li {
+            text-align: center;
+            flex: 1 0 19%;
+            line-height: 50px;
+            border: 1px solid gray;
+        }
+
+        nav>ul>li>ul {
+            display: none;
+        }
+
+        #tableWrap {
+            width: 1000px;
+
+        }
+
+        .tables {
+            /*div임*/
+
+            border: 1px solid gray;
+            height: 150px;
+            padding-top: 20px;
+
+
+        }
+
+        .tables>table {
+            margin: 0 auto;
+            text-align: center;
+            width: 800px;
+            
+        }
+        
+
+        /*로그인*/
+
+        #right {
+            position: relative;
+        }
+
+        #right>div {
+
+            position: absolute;
+            height: 300px;
+            width: 300px;
+            top: 200px;
+
+        }
+
+        #right>div>form {
+            text-align: right;
+        }
+
+        #right>div>form>input {
+            margin: 20px 20px 0px 0px;;
+
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div>
+        <div id="left">
+
+        </div>
+        <div id="center">
+            <header>
+                <div>
+                    <input type="text">
+                    <input type="submit">
+                </div>
+            </header>
+            <nav>
+                <ul>
+                    <li>축구
+                        <ul>
+                            <li>1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>4</li>
+                            <li>5</li>
+                        </ul>
+                    </li>
+                    <li>야구
+                        <ul>
+                            <li>1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>4</li>
+                            <li>5</li>
+                        </ul>
+                    </li>
+                    <li>농구
+                        <ul>
+                            <li>1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>4</li>
+                            <li>5</li>
+                        </ul>
+                    </li>
+
+                    <li>자전거
+                        <ul>
+                            <li>1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>4</li>
+                            <li>5</li>
+                        </ul>
+                    </li>
+
+                    <li>자유게시판</li>
+                </ul>
+                <div> 노란색 광고판(li들 나오면 사라짐)</div>
+            </nav>
+            <div id="tableWrap">
+                <div id="table1" class="tables">
+                    <table>
+                        <tr>
+                            <td>번호</td>
+                            <td>제목</td>
+                            <td>닉네임</td>
+                            <td>날짜</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="table2" class="tables">
+                    <table>
+                        <tr>
+                            <td>번호</td>
+                            <td>제목</td>
+                            <td>닉네임</td>
+                            <td>날짜</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="table3" class="tables">
+                    <table>
+                        <tr>
+                            <td>번호</td>
+                            <td>제목</td>
+                            <td>닉네임</td>
+                            <td>날짜</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="table4" class="tables">
+                    <table>
+                        <tr>
+                            <td>번호</td>
+                            <td>제목</td>
+                            <td>닉네임</td>
+                            <td>날짜</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <!--tableWrap-->
+        </div>
+        <div id="right">
+
+            <div>
+                
+                <form action="">
+
+                    
+                    아이디 <input type="text"><br>
+                    비밀번호 <input type="text"><br>
+                    <input type="submit">
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+</body></html>
